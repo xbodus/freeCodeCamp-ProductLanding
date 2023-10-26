@@ -63,36 +63,37 @@ body {
 }
 
 .hero-section {
-    height: 25rem;
+    height: 40rem;
     width: 100vw;
     overflow: hidden;
 }
 
 .gradient {
     position: absolute;
-    height: 25rem;
+    height: 40rem;
     width: 100vw;
     background-image: linear-gradient(120deg,rgba(0, 0, 0, 0.95) 30%, transparent);
 }
 
 #hero-img {
-    object-position: -500px -1500px;
+    object-position: -500px -1350px;
     z-index: -1;
 }
 
 h1 {
     width: 25vw;
-    bottom: 27%;
+    bottom: 4%;
     left: 3%;
     position: absolute;
     text-align: start;
     font-family: 'roboto', sans-serif;
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: white;
+    line-height: 6rem;
 }
 
 .company-name {
-    color: orange;
+    color: #ffa500;
     font-weight: bolder;
     text-transform: uppercase;
     font-style: italic;
@@ -109,10 +110,39 @@ blockquote {
     display: grid;
     grid-template-columns: 2fr 1.5fr;
     margin-top: 0;
-    background-color: rgba(255, 165, 0, .8);
+    background-color: black;
 }
 
-.bike-container {
+.features-div {
+    margin-left: 2rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.feature {
+    height: 100%;
+    width: 100%;
+}
+
+.icon {
+    height: 4rem;
+    width: rem;
+    margin: 2.5rem;
+    filter: invert(69%) sepia(50%) saturate(4177%) hue-rotate(2deg) brightness(108%) contrast(102%);
+}
+
+.premium, .innovation, .shipping {
+    display: flex;
+    align-items: center;
+    font-family: 'roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 2rem;
+    color: white;
+}
+
+.feature-bike-container {
     height: 25rem;
     width: 25rem;
     overflow: hidden;
@@ -120,7 +150,7 @@ blockquote {
     margin: auto;
 }
 
-.bike-container > img {
+.feature-bike-container > img {
     height: 800px;
     object-position: 0 -80px;
 }
@@ -135,12 +165,90 @@ blockquote {
 .bikes-section {
     height: 30rem;
     width: 100vw;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.bikes-heading {
+    margin-left: 2rem;
+    font-family: 'roboto', sans-serif;
+}
+
+.bikes-heading > h2 {
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.bikes-heading > p {
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.bikes-div {
+    margin: auto;
+    font-family: 'roboto', sans-serif;
+}
+
+.bikes-div > h3 {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.bikes-container {
+    height: 15rem;
+    width: 15rem;
+    overflow: hidden;
+}
+
+.bike {
+    height: 15rem;
 }
 
 .parts-section {
     height: 30rem;
     width: 100vw;
     background-color: rgba(255, 165, 0, .8);
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.parts-div {
+    margin: auto;
+    font-family: 'roboto', sans-serif;
+}
+
+.parts-container {
+    height: 15rem;
+    width: 15rem;
+    overflow: hidden;
+}
+
+.part {
+    height: 15rem;
+}
+
+.parts-div > h3 {
+    width: 200px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.parts-heading {
+    font-family: 'roboto', sans-serif;
+    text-align: right;
+    margin-right: 2rem;
+}
+
+.parts-heading > h2 {
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.parts-heading > p {
+    line-height: 2rem;
+    text-align: justify;
 }
 
 .reviews-section {
@@ -191,6 +299,14 @@ blockquote {
 
 .cust-img {
     height: 8rem;
+}
+
+.cust-img.two {
+    object-position: -35px 0;
+}
+
+.cust-img.three {
+    object-position: -25px -40px;
 }
 
 .five-stars {
