@@ -1,0 +1,203 @@
+* {
+    box-sizing: content-box;
+    /*border: 1px solid black;*/
+}
+
+body {
+    margin: 0;
+    width: fit-content;
+}
+
+.deals-banner {
+    height: 5vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deals-banner > p {
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.link-banner {
+    height: 10 vh;
+    width: 100 vw;
+    background-color: orange;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.link-banner > img {
+    height: 10vh;
+    margin-left: 1rem;
+}
+
+.link-banner > div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin-right: 1rem;
+}
+
+.link-banner > div > li > a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    vertical-align: middle;
+    font-family: 'roboto', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.link-banner > div > li > a:hover {
+    color: white;
+}
+
+.hero-section {
+    height: 25rem;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.gradient {
+    position: absolute;
+    height: 25rem;
+    width: 100vw;
+    background-image: linear-gradient(120deg,rgba(0, 0, 0, 0.95) 30%, transparent);
+}
+
+#hero-img {
+    object-position: -500px -1500px;
+    z-index: -1;
+}
+
+h1 {
+    width: 25vw;
+    bottom: 27%;
+    left: 3%;
+    position: absolute;
+    text-align: start;
+    font-family: 'roboto', sans-serif;
+    font-size: 4rem;
+    color: white;
+}
+
+.footer-img {
+    height: 20rem;
+    width: 100vw;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.email-sub {
+    height: 100vh;
+    width: 100%;
+    background-color: orange;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    padding: 20px;
+    z-index: 0;
+}
+
+.email-sub > label {
+    height: 100%;
+    width: 70%;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+}
+
+input {
+    height: 2rem;
+    width: 20vw;
+    border: none;
+    z-index: 3;
+}
+
+button {
+    height: 2rem;
+    width: 5vw;
+    border: none;
+    background-color: black;
+    color: orange;
+}
+
+button:hover {
+    color: white;
+    font-weight: bold;
+}
+
+#logo-footer {
+    height: 600px;
+    position: relative;
+    bottom: 385px;
+    right: 75px;
+    filter: invert(87%) sepia(99%) saturate(5%) hue-rotate(181deg) brightness(110%) contrast(97%);
+    opacity: .3;
+    transform: rotate(-15deg);
+    z-index: 1;
+}
+
+.footer-img > img {
+    width: 70vw;
+    object-position: 0 -450px;
+
+}
+
+footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.footer-links {
+    height: 50%;
+    color: white;
+    list-style: none;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links > li > a {
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links > li > a:hover {
+    color: orange;
+}
+
+.footer-caption {
+    height: 50%;
+    font-size: .8rem;
+    color: white;
+    opacity: .8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
