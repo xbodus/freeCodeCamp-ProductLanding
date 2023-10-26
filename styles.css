@@ -15,6 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 4;
 }
 
 .deals-banner > p {
@@ -25,20 +26,26 @@ body {
     text-align: center;
 }
 
-.link-banner {
+.search-bar, .cart {
+    filter: invert(87%) sepia(99%) saturate(5%) hue-rotate(181deg) brightness(110%) contrast(97%);
+}
+
+.nav-bar {
+    top: 5vh;
     height: 10 vh;
-    width: 100 vw;
+    width: 100%;
     background-color: orange;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    z-index: 5;
 }
 
-.link-banner > img {
+.nav-bar > img {
     height: 10vh;
     margin-left: 1rem;
 }
 
-.link-banner > div {
+.nav-bar > div {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -46,7 +53,7 @@ body {
     margin-right: 1rem;
 }
 
-.link-banner > div > li > a {
+.nav-bar > div > li > a {
     margin-left: 40px;
     text-decoration: none;
     color: black;
@@ -58,7 +65,7 @@ body {
     font-weight: bold;
 }
 
-.link-banner > div > li > a:hover {
+.nav-bar > div > li > a:hover {
     color: white;
 }
 
@@ -382,7 +389,7 @@ input {
     z-index: 3;
 }
 
-button {
+input[type="submit"] {
     height: 2rem;
     width: 5vw;
     border: none;
