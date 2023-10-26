@@ -91,6 +91,140 @@ h1 {
     color: white;
 }
 
+.company-name {
+    color: orange;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+blockquote {
+    margin: 1rem 1rem;
+    font-family: 'roboto', sans-serif;
+}
+
+.features-section {
+    height: 30rem;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    margin-top: 0;
+    background-color: rgba(255, 165, 0, .8);
+}
+
+.bike-container {
+    height: 25rem;
+    width: 25rem;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.bike-container > img {
+    height: 800px;
+    object-position: 0 -80px;
+}
+
+.features {
+    height: 25rem;
+    width: 60vw;
+    border: 1px solid black;
+    margin: auto 0;
+}
+
+.bikes-section {
+    height: 30rem;
+    width: 100vw;
+}
+
+.parts-section {
+    height: 30rem;
+    width: 100vw;
+    background-color: rgba(255, 165, 0, .8);
+}
+
+.reviews-section {
+    height: 40rem;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.cus-sat {
+    height: 25%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.cus-sat > h2 {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.cus-sat > p {
+    margin: 0;
+    height: 100vh;
+    text-align: center;
+    font-family: 'roboto', sans-serif;
+    font-style: italic;
+}
+
+.review {
+    height: 24rem;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cust-container {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: grey;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.cust-img {
+    height: 8rem;
+}
+
+.five-stars {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cus-review {
+    height: 70%;
+    width: 60%;
+    margin: 0 0 3rem 0;
+}
+
+.google-review {
+    font-family: 'roboto', sans-serif;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.five {
+    height: fit-content;
+    margin: 0;
+}
+
+.star {
+    height: 2rem;
+    margin: 0 .5rem;
+    filter: invert(85%) sepia(22%) saturate(3202%) hue-rotate(358deg) brightness(104%) contrast(103%);
+}
+
 .footer-img {
     height: 20rem;
     width: 100vw;
@@ -148,7 +282,7 @@ button:hover {
 #logo-footer {
     height: 600px;
     position: relative;
-    bottom: 385px;
+    bottom: 400px;
     right: 75px;
     filter: invert(87%) sepia(99%) saturate(5%) hue-rotate(181deg) brightness(110%) contrast(97%);
     opacity: .3;
