@@ -6,6 +6,7 @@
 body {
     margin: 0;
     width: fit-content;
+    overflow-x: hidden;
 }
 
 .deals-banner {
@@ -24,6 +25,10 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+    animation-name: flashing;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps-end;
 }
 
 .search-bar, .cart {
@@ -43,6 +48,13 @@ body {
 .nav-bar > img {
     height: 10vh;
     margin-left: 1rem;
+}
+
+.nav-bar > img:active {
+    animation-name: slider;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
 }
 
 .nav-bar > div {
@@ -80,11 +92,24 @@ body {
     height: 40rem;
     width: 100vw;
     background-image: linear-gradient(120deg,rgba(0, 0, 0, 0.95) 30%, transparent);
+    z-index: 2;
+}
+
+.bl-background {
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    background-color: black;
+    z-index: -1;
 }
 
 #hero-img {
     object-position: -500px -1350px;
     z-index: -1;
+    animation-name: fade-in-up;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 h1 {
@@ -97,6 +122,11 @@ h1 {
     font-size: 4.5rem;
     color: white;
     line-height: 6rem;
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    z-index: 3;
 }
 
 .company-name {
@@ -230,6 +260,12 @@ blockquote {
     height: 15rem;
     width: 15rem;
     overflow: hidden;
+    border-radius: 10%;
+}
+
+.bikes-container:hover, .bike:hover, .parts-container:hover {
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 .part {
@@ -370,6 +406,7 @@ blockquote {
 .email-sub > label {
     height: 100%;
     width: 70%;
+    margin-left: 1.5rem;
     font-family: sans-serif;
     font-weight: bolder;
     font-size: 3.5rem;
@@ -395,6 +432,11 @@ input[type="submit"] {
     border: none;
     background-color: black;
     color: orange;
+}
+
+input[type="submit"]:hover {
+    background-color: orange;
+    color: black;
 }
 
 button:hover {
@@ -457,4 +499,61 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+}
+
+@keyframes flashing {
+    0% {
+        color: white;
+    }
+    50%{
+        color: orange;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-up {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(2500px);
+        opacity: 1;
+    }
+    51% {
+        transform: translateX(2500px);
+        opacity: 0;
+    }
+    52% {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
